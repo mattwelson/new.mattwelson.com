@@ -1,0 +1,17 @@
+{
+  "name": "@mattwelson/gatsby-theme-blog-matt",
+  "version": "0.0.1",
+  "description": "Theme for MattWelson.com",
+  "main": "index.js",
+  "author": "Matt Welson <matthew.welson@gmail.com\n> (mattwelson.com)",
+  "license": "MIT",
+  "dependencies": {
+    "gatsby": "^2.17.4",
+    "gatsby-plugin-mdx": "^1.0.53",
+    "gatsby-plugin-theme-ui": "^0.2.43",
+    "gatsby-source-filesystem": "^2.1.33",
+    "gatsby-theme-style-guide": "^0.2.44",
+    "gatsby-theme-ui-blog": "^0.2.44",
+    "react-dom": "^16.11.0"
+  }
+}
