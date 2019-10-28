@@ -1,0 +1,13 @@
+{
+  "name": "new-blog",
+  "version": "0.0.1",
+  "description": "Blog and theme",
+  "main": "index.js",
+  "author": "Matt Welson <matthew.welson@gmail.com\n> (mattwelson.com)",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "sites/*"
+  ]
+}

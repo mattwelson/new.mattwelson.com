@@ -1,0 +1,8 @@
+{
+  "name": "@mattwelson/gatsby-theme-blog-matt",
+  "version": "0.0.1",
+  "description": "Theme for MattWelson.com",
+  "main": "index.js",
+  "author": "Matt Welson <matthew.welson@gmail.com\n> (mattwelson.com)",
+  "license": "MIT"
+}
