@@ -6,12 +6,17 @@
   "author": "Matt Welson <matthew.welson@gmail.com\n> (mattwelson.com)",
   "license": "MIT",
   "dependencies": {
+    "@emotion/core": "^10.0.22",
     "gatsby": "^2.17.4",
     "gatsby-plugin-mdx": "^1.0.53",
     "gatsby-plugin-theme-ui": "^0.2.43",
     "gatsby-source-filesystem": "^2.1.33",
     "gatsby-theme-style-guide": "^0.2.44",
     "gatsby-theme-ui-blog": "^0.2.44",
-    "react-dom": "^16.11.0"
+    "mdx-utils": "^0.2.0",
+    "prism-react-renderer": "^1.0.2",
+    "react-dom": "^16.11.0",
+    "react-live": "^2.2.1",
+    "theme-ui": "^0.2.44"
   }
 }
