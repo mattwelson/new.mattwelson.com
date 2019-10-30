@@ -3,8 +3,8 @@ import { graphql } from 'gatsby'
 import TagPage from 'gatsby-theme-ui-blog/src/posts'
 
 export const query = graphql`
-  query($tagNameRegex: String!) {
-    allBlogPost(filter: { tags: { regex: $tagNameRegex } }) {
+  query($tagName: String!) {
+    allBlogPost(filter: { tags: { eq: $tagName } }) {
       nodes {
         id
         excerpt

@@ -26,7 +26,7 @@ exports.createPages = async ({ actions, graphql, reporter }, options) => {
       path: `tags/${string_to_slug(tag.name)}`,
       component: require.resolve('./src/templates/tag-page-template.js'),
       context: {
-        tagNameRegex: `/${tag.name}/i`,
+        tagName: tag.name,
       },
     })
   })
