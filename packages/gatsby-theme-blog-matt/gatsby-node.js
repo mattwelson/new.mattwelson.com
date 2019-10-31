@@ -1,3 +1,5 @@
+import stringToSlug from './src/utils/stringToSlug'
+
 // Build tag pages and a root tag page (root page TODO)
 exports.createPages = async ({ actions, graphql, reporter }, options) => {
   const result = await graphql(`
@@ -23,30 +25,11 @@ exports.createPages = async ({ actions, graphql, reporter }, options) => {
 
   tags.forEach(tag => {
     actions.createPage({
-      path: `tags/${string_to_slug(tag.name)}`,
+      path: `tags/${stringToSlug(tag.name)}`,
       component: require.resolve('./src/templates/tag-page-template.js'),
       context: {
         tagName: tag.name,
       },
     })
   })
-}
-
-function string_to_slug(str) {
-  str = str.replace(/^\s+|\s+$/g, '') // trim
-  str = str.toLowerCase()
-
-  // remove accents, swap ñ for n, etc
-  var from = 'àáäâèéëêìíïîòóöôùúüûñç·/_,:;'
-  var to = 'aaaaeeeeiiiioooouuuunc------'
-  for (var i = 0, l = from.length; i < l; i++) {
-    str = str.replace(new RegExp(from.charAt(i), 'g'), to.charAt(i))
-  }
-
-  str = str
-    .replace(/[^a-z0-9 -]/g, '') // remove invalid chars
-    .replace(/\s+/g, '-') // collapse whitespace and replace by -
-    .replace(/-+/g, '-') // collapse dashes
-
-  return str
 }
