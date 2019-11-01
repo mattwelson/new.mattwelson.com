@@ -1,4 +1,4 @@
-import stringToSlug from './src/utils/stringToSlug'
+const stringToSlug = require('./src/utils/stringToSlug')
 
 // Build tag pages and a root tag page (root page TODO)
 exports.createPages = async ({ actions, graphql, reporter }, options) => {

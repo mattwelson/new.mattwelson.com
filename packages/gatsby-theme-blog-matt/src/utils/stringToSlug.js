@@ -1,4 +1,4 @@
-export default str => {
+module.exports = str => {
   str = str.replace(/^\s+|\s+$/g, '') // trim
   str = str.toLowerCase()
 
