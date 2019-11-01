@@ -32,4 +32,11 @@ exports.createPages = async ({ actions, graphql, reporter }, options) => {
       },
     })
   })
+
+  // Create the Tag page
+  actions.createPage({
+    path: '/tags',
+    component: require.resolve('./src/templates/tags-page-template.js'),
+    context: {},
+  })
 }
